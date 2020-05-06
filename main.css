@@ -303,7 +303,7 @@ hr {
 }
 
 #home::before {
-    background-image: url(images/homebg.PNG);
+    background-image: url(images/homebg.png);
     position: absolute;
     background-attachment: fixed;
     background-repeat: no-repeat;
