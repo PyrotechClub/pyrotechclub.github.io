@@ -1,0 +1,115 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>Web Development | Pyrotech Club</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link href='main.css' rel='stylesheet' type='text/css'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    
+    <!---  NAVBAR   --->
+        
+<div class="navbar skill-nav">
+    <a href="index.html"><img src="images/logo.png" class="nav-logo skill-page-nav-logo"></a>
+    <a href="index.html"><span>Home</span></a>
+</div>    
+    
+    <!---  HEADER   --->
+        
+<div id="home" class="overlay skill-page-home web-home">
+    <div class="heading animated fadeInDown">
+        <center>
+            <h1>Web Development</h1>
+        </center>
+    </div>
+</div>
+    
+    <!---  ABOUT   --->
+        
+<center>        
+    <div id="about">
+        <div class="writen">
+            <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.</p>
+            <p>This year we'll be aiming to teach Basics of HTML, CSS and Java Script.<br> Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>    
+        </div> 
+    </div>
+    <hr>
+</center>
+    
+    <!---  HEADS   --->
+        
+<center>        
+    <div id="head">
+        <div class="writen">
+                
+            <div class="head-info">
+                <div class="head-img-skills">
+                    <img src="images/yeet.png">
+                </div>
+                <div class="head-text">
+                    <h4>Lorem Ipsum Dolor</h4>
+                    <h5>Head of Web Development</h5>
+                    <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                </div>
+            </div>
+            
+            <div class="head-info">
+                <div class="head-img-skills">
+                    <img src="images/yeet.png">
+                </div>
+                <div class="head-text">
+                    <h4>Lorem Ipsum Dolor</h4>
+                    <h5>Head of Web Development</h5>
+                    <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                </div>
+            </div>
+                
+        </div> 
+    </div>
+</center>
+
+    <!---  FOOTER   --->    
+    
+<div id="end">
+    <center>
+        <div class="footer-text">
+            <div class="footer-copy font-alt">
+                <a href="index.html"><img src="images/logo.png" alt=""></a><br><br><br>
+                © Pyrotech Club 2020
+            </div>
+            <br>
+            <big><p class="footer-made"> Made By: <a href="https://namanchandok.github.io"> Naman Chandok</a> and Shaivi Shewaramani</p> </big>  
+        </div>
+    </center>
+</div>
+
+<script>
+    
+    // TRANSPARENT NAVBAR
+    
+    jQuery(document).on("scroll", function () {
+        if ($(document).scrollTop() > 120) {
+            $(".navbar").css("background-color","var(--nav-bg-color)");
+            $(".overlay").css("background-color","rgba(255, 255, 255, 0.64)");
+        } else {
+            $(".navbar").css("background","none");
+            $(".overlay").css("background-color","var(--overlay-color)");
+        }
+    });  
+    
+</script>    
+</body>    
+
+</html>

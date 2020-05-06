@@ -1,0 +1,485 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>Pyrotech Club</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link href='main.css' rel='stylesheet' type='text/css'>
+<link href='animations.css' rel='stylesheet' type='text/css'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body onload="myFunction()">
+
+    <!---  MUSIC  --->
+    
+<audio autoplay loop hide>
+    <source src="music.mp3">
+</audio>
+    
+    <!---  LOADER   --->
+	
+<div class="load" id="load">
+    <center>
+        <div class="loader-wheel">
+        </div>
+    </center>
+</div>  
+
+<div class="mainBod" id="mainBod">
+        
+    <!---  NAVBAR   --->
+        
+<div class="navbar">
+    <span onclick="openNav()">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#home"><img src="images/logo.png" class="nav-logo"></a>
+</div>
+    
+<div id="mySidenav" class="sidenav">
+    <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">
+            <i class="nav-number">.01</i><br>
+            Home
+        </a>
+        <a href="#about">
+            <i class="nav-number">.02</i><br>
+            About Pyrotech
+        </a>
+        <a href="#skills">
+            <i class="nav-number">.03</i><br>
+            Skills
+        </a>
+        <a href="#head">
+            <i class="nav-number">.04</i><br>
+            Heads
+        </a>
+        <a href="#prize">
+            <i class="nav-number">.05</i><br>
+            Achievements
+        </a>
+        <a href="https://shaivipyrotech.typeform.com/to/VjQtIq" target="_blank" class="a-btn">Sign Up</a>
+    </center>
+</div>
+    
+    <!---  HEADER   --->
+        
+<div id="home" class="overlay">
+    <div class="heading animated fadeInDown">
+        <center>
+            <img src="images/logo.png"><br><br><br>
+            <a href="https://shaivipyrotech.typeform.com/to/VjQtIq" target="_blank" class="a-btn">Sign Up</a>
+        </center>
+    </div>
+    <div class="scroll-down">
+        <center>
+            <a href="#about"><i class="fa fa-long-arrow-alt-down"></i></a>
+        </center>
+    </div>
+</div>
+
+        <!---  ABOUT   --->
+        
+<center>        
+    <div id="about">
+        <div class="section-head">
+            <h1>About Pyrotech</h1>   
+            <hr>
+        </div>    
+        <div class="writen">
+            <p>Pyrotech members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in many events.</p> 
+            <p>The Pyrotech Club consists of Wiz kids who are talented in myriad areas such as web designing, software development, image editing, movie making, 3-D modelling, photography and others. They help other students gain competence on new software. They not only participate in various inter school computer competitions but also organise computer events within the school. The Annual  Inter-school Computer Fest ‘Ordin@trix’ is conceived, planned and organized entirely by the Pyrotech team.</p>
+        </div>
+    </div>
+</center>
+
+        <!---  SKILLS   --->
+        
+<center>        
+    <div id="skills">
+        <div class="section-head">
+            <hr>
+            <h1>Skills</h1>    
+        </div>    
+        <div class="writen">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div> 
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-image web">
+                        <div class="overlay">
+                            <a href="web.html" target="_blank">
+                                <span>Know More</span><br>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <h5>Web-Development</h5>
+                        <hr>
+                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites<a href="web.html" target="_blank">... Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-image movie">
+                        <div class="overlay">
+                            <a href="movie.html" target="_blank">
+                                <span>Know More</span><br>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <h5>Movie Making</h5>
+                        <hr>
+                        <p>Movie making involves a number of discrete stages including an initial story, idea<a href="movie.html" target="_blank">... Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>    
+        
+        <div class="row">            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-image robotics">
+                        <div class="overlay">
+                            <a href="robotic.html" target="_blank">
+                                <span>Know More</span><br>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <h5>robotics</h5>
+                        <hr>
+                        <p>Robotics is the study of robot technology, and it aids humans in their daily tasks and grant them additional capabilities<a href="robotic.html" target="_blank">... Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-image photo">
+                        <div class="overlay">
+                            <a href="photo.html" target="_blank">
+                                <span>Know More</span><br>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <h5>Digital Imaging</h5>
+                        <hr>
+                        <p>Digital imaging is the process of visual communication and problem-solving through the use of typography<a href="photo.html" target="_blank">... Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+        
+        <div class="row">            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-image music">
+                        <div class="overlay">
+                            <a href="music.html" target="_blank">
+                                <span>Know More</span><br>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <h5>Music Production</h5>
+                        <hr>
+                        <p>Digital music technology encompasses digital instruments, computers, electronic effects units, software<a href="music.html" target="_blank">... Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-image game">
+                        <div class="overlay">
+                            <a href="game.html" target="_blank">
+                                <span>Know More</span><br>
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <h5>Game Development</h5>
+                        <hr>
+                        <p>Game Development is the art of creating games and describes the design, development and release of a game<a href="game.html" target="_blank">... Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+            
+    </div>
+</center>     
+
+        <!---  HEADS   --->
+        
+<center>        
+    <div id="head">
+        <div class="section-head">
+            <h1>Heads</h1>   
+            <hr>
+        </div>    
+        <div class="writen">
+            
+            <div class="row"> 
+                <div class="col-md-6">
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Namya Chhabra</h4>
+                            <h5>Creative Head</h5>
+                            <p><i class="fas fa-envelope"></i> namyachhabra@gmail.com<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">    
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Anandiya Sheel Diwan</h4>
+                            <h5>Creative Head</h5>
+                            <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="row"> 
+                <div class="col-md-6">
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Shaivi Shewaramani</h4>
+                            <h5>Creative Head</h5>
+                            <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail.com<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">    
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Ronit Das</h4>
+                            <h5>Creative Head</h5>
+                            <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="row"> 
+                <div class="col-md-6">
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Sparsh Kumar Tanwar</h4>
+                            <h5>Head of Programming</h5>
+                            <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">    
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Sharan Suri</h4>
+                            <h5>Head of Robotics</h5>
+                            <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                        </div>
+                    </div>
+                </div>                
+            </div> 
+            
+            <div class="row"> 
+                
+                <h5 style="opacity: 0;">And it pains me to include...</h5>
+                
+                <div class="col-md-6">
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Saanya Anand</h4>
+                            <h5>Head of Movie Making</h5>
+                            <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">    
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="images/yeet.png">
+                        </div>
+                        <div class="head-text">
+                            <h4>Harshdeep Singh</h4>
+                            <h5>Head of Movie Making</h5>
+                            <p><i class="fas fa-envelope"></i> loremipsum@dolor.com<br><br></p>
+                        </div>
+                    </div>
+                </div>                
+            </div> 
+            
+        </div> 
+    </div>
+</center>
+
+        <!---  ACHIEVEMENTS   --->
+        
+<center>        
+    <div id="prize">
+        <div class="section-head">
+            <hr>
+            <h1>Achievements</h1>   
+        </div>    
+        <div class="writen">
+            <ul type="none">
+                <br><li>» Rimuksh Kansal and Girik Jindal secured the third position in Code Bytes.</li><br>
+                <li>» In Anim@trix event, Shivansh Badoni and Aneira Shewaramani of V A won the first position for creating an animated story in Scratch.</li><br>
+                <li>» In  Movie@trix,Harshdeep Singh of  XI C and Sahil Chowdhary of XI A, were awarded the prize for best sound effects by CHINH India.</li><br>
+                <li>» In  Quiz@trix,Ansh Bajaj of XI C and Namya Chabbra of  IX A bagged the third position.</li><br>                
+                <li>» School won second position in interschool movie making Competition-Screen Time in Think Summit 2019,  organised by DPS R K Puram.</li><br>                
+                <li>» Aneira Shewaramani of class V bagged the first position in drawing competition using MS-Paint software at Force Fest organized by Apeejay, Sheikh Sarai.</li><br>                
+                <li>» Ronit Das of XI C stood first in the gaming event giving a tough fight to all the contestants in grilling rounds at Force Fest organized by Apeejay, Sheikh Sarai.</li><br>      
+                <li>» Arihant Jain and Tanish Chowdhary bagged the first position in Powerpoint presentation event in Learners’ Conclave organized by Lotus Valley School, Gurugram.</li><br>   
+                <li>» Somavenath Sawhney was declared runners up in Delhi-NCR Junior Gaming Championship v3.0 conducted at DPS, RK Puram.</li><br>
+                <li>» DPS International School Saket organized their annual IT fest “Syntax”. Maalav Chakraborty of IX A secured the third position in syntax design event.</li><br>
+                <li>» Manya Kamath and Harshdeep Singh bagged the 3rd position in the movie making competition at INDIA FEST'19, was organized by DPS R K Puram.</li><br>
+                <li>» Students shine at Filmit, movie making competition by INTACH.</li><br>
+                
+            </ul>
+        </div>
+    </div>
+</center>
+    
+        <!---  VIDEO   --->
+        
+<div id="video">
+    <center>
+         <div class="section-head"> 
+            <hr>
+        </div>    
+        <div class="writen">
+            <video class="movie" width="100%" controls>
+                <source src="images/My Video2.mp4" type="video/mp4">
+                <source src="images/My Video2.ogg" type="video/ogg">
+            </video>
+        </div>
+    </center>
+</div>
+    
+        <!---  FOOTER   --->
+        
+<div id="end">
+    <center>
+        <div class="footer-text">
+            <div class="footer-copy font-alt">
+                <a href="#home"><img src="images/logo.png" alt=""></a><br><br><br>
+                © Pyrotech Club 2020
+            </div>
+            <br>
+            <big><p class="footer-made"> Made By: <a href="https://namanchandok.github.io"> Naman Chandok</a> and Shaivi Shewaramani</p> </big>  
+        </div>
+    </center>
+</div>
+    
+
+</div>
+<script>
+    
+    // LOADER
+    
+    var myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+        document.getElementById("load").style.display = "none";
+        document.getElementById("mainBod").style.display = "block";
+    } 
+    
+    // TRANSPARENT NAVBAR
+    
+    jQuery(document).on("scroll", function () {
+        if ($(document).scrollTop() > 120) {
+            $(".navbar").css("background-color","var(--nav-bg-color)");
+            $(".overlay").css("background-color","rgba(255, 255, 255, 0.7)");
+            $(".nav-logo").css("opacity","1");
+        } else {
+            $(".navbar").css("background","none");
+            $(".overlay").css("background-color","var(--overlay-color)");   
+            $(".nav-logo").css("opacity","0");
+        }
+    });  
+    
+    // SMOOTH SCROLL
+    
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            } 
+        });
+    });    
+    
+    // SIDE-NAV
+    
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    
+</script>
+</body>
+</html>

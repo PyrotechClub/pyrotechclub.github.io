@@ -1,0 +1,664 @@
+/* VARIABLES */
+
+:root {
+    --primary-color: #65dceb;
+    --font-color: #000;
+    --bg-color: #fff;
+    --heading-color: #000;
+    --nav-bg-color: rgb(35, 35, 35);
+    --overlay-color: rgba(255, 255, 255, 0.6);
+    --skill-overlay-color: rgba(0, 0, 0, 0.4);
+    --scroll-bg-color: #eee;
+    --scroll-fg-color: #aaa;
+    --dark-bg-color: rgb(40, 40, 40);
+}
+
+/* PREREQUISITES */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family : 'Raleway', sans-serif;
+    font-weight: 350 !important;
+}
+
+
+html {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}    
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-fg-color);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+hr {
+    width: 85%;
+    border-color: var(--nav-bg-color);
+}
+
+    /* LOADER */
+
+.load {
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    padding-top: 17%;
+}
+    
+.loader-wheel {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #2f2f2f;
+    height: 150;
+    width: 150;
+    animation: spin 2s linear infinite;
+}
+        
+.loader-wheel:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #a5a5a5;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    animation: spin 3s linear infinite;
+}
+        
+.loader-wheel::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #7b7b7b;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    animation: spin 1.5s linear infinite;
+}
+
+
+.mainBod {
+    display: none;
+} 
+
+/*NAVBAR*/
+
+.navbar {
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    width: 100%;
+    border-radius: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: InDown;
+    animation-name: InDown;
+    top: 0;
+    transition: all 0.5s;	
+    z-index: 1;
+}
+.navbar span {
+    float: left;
+    display: block;
+    color:  #eee;
+    text-align: center;
+    padding: 2vh;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 10px 15px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20
+}
+
+.navbar a span {
+    float: right !important;
+    padding: 0;
+    margin: 4vh;
+}
+
+.nav-number {
+    font-size: 18;
+    color: var(--primary-color);
+    font-weight: 500 !important;
+}
+
+.navbar a span::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.skill-nav a span{
+    font-size: 16 !important ;
+}
+
+.navbar a:hover span::after {
+    width: 100%;
+}
+
+.navbar a span:hover {
+    color: #fff;
+}
+
+.navbar a img{
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    margin: 2vh;
+    filter: invert(100%);
+}
+
+.skill-page-nav-logo {
+    opacity: 1 !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10%;
+}
+
+.sidenav a {
+    display: block;
+    color:  rgb(157, 157, 157);
+    text-align: center;
+    padding: 10px 4px;
+    width: 80%;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 10px 15px;
+    position: relative;
+    font-size: 25;
+    text-transform: uppercase;
+    font-weight: 500 !important; 
+}
+
+.sidenav a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.sidenav a:hover::after {
+    width: 20%;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 36px;
+    margin-left: 4%;
+    margin-top: 5%;
+    width: 10%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+    /*HOME*/
+
+#home { 
+    background: var(--overlay-color);
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+}    
+
+.skill-page-home { 
+    height: 80% !important;
+    background-color: var(--skill-overlay-color) !important;
+    color: #fff;
+}    
+
+.skill-page-home::before {
+    height: 80% !important;
+}
+
+.web-home::before {
+    background-image: url(images/web.jpg) !important;
+}
+
+.game-home::before {
+    background-image: url(images/game.png) !important;
+}
+
+.quiz-home::before {
+    background-image: url(images/quiz.png) !important;
+}
+
+.code-home::before {
+    background-image: url(images/code.png) !important;
+}
+
+.robotics-home::before {
+    background-image: url(images/robotics.png) !important;
+}
+
+.music-home::before {
+    background-image: url(images/music.png) !important;
+}
+
+.photo-home::before {
+    background-image: url(images/photo.png) !important;
+}
+
+.movie-home::before {
+    background-image: url(images/movie.png) !important;
+}
+
+#home::before {
+    background-image: url(images/homebg.PNG);
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+#home .heading {
+    padding-top: 35vh;
+    visibility: visible;
+    padding-bottom: 160px;
+}
+
+#home .heading img {
+    max-width: 70%;
+}
+
+#home .heading {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+}
+
+.a-btn {
+    color: var(--font-color);
+    border: solid 1.5px;
+    background: none;
+    border-radius: 30px;
+    padding: 10 30;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s;
+    text-align: center;
+    border-color: var(--primary-color);
+    width: 20% !important;
+    font-size: 15 !important;
+    text-transform: none;
+}
+
+.a-btn:hover {
+    background: var(--primary-color);
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.a-btn::after {
+    background: none !important;
+}
+
+.scroll-down a i {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--font-color);
+    line-height: 30px;
+    border-radius: 50%;
+    transition: 500ms;
+    text-align: center;
+    color: var(--font-color);
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.scroll-down a:hover i{
+    transform: scale(1.1)
+}
+	
+.scroll-down {
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-delay: 4s;
+	-webkit-animation-delay: 4s;
+}
+    /*ABOUT*/
+
+.section-head h1 {
+    font-family: times new roman;
+    font-weight: 100;
+}
+
+#about h4,h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--font-color);
+}
+.row {
+    margin: 0 0 2% 0;
+}
+
+#about {
+    padding: 5% 10% 3%;
+    z-index: 2;
+    align-content: center;
+    justify-content: center;
+}
+    
+#about .writen  {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: var(--font-color);
+}
+
+    /*SKILLS*/
+
+#skills {
+    padding: 3% 10%;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--dark-bg-color);
+    color: #fff;
+}
+
+.section-head hr {
+    border-color: #aaa;
+    width: 10%;
+}
+
+#skills .section-head h2 {
+    font-size: 20;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+    
+#skills .col-md-6 {
+    padding: 3%;
+}
+
+.card-image {
+    height: 40%;
+    z-index: -1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-image .overlay {
+    height: 100%;
+    padding: 20%;
+    background-color: rgba(255, 255, 255, 0.88) !important;
+    opacity: 0;
+    transition: 0.25s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover .card-text {
+    background-color: #c3eef4;
+}
+
+.card-image a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 30;
+    height: 100%;
+    text-align: center;
+}
+
+.card {
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+    background: #fff;
+    padding: 3%;
+    text-align: left;
+    transition: 0.25s;
+    color: var(--font-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.web {
+    background-image: url(images/web.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.code {
+    background-image: url(images/code.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.quiz {
+    background-image: url(images/quiz.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.movie {
+    background-image: url(images/movie.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.photo {
+    background-image: url(images/photo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.robotics {
+    background-image: url(images/robotics.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.program {
+    background-image: url(images/programming.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.game {
+    background-image: url(images/game.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.music {
+    background-image: url(images/music.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-text hr{
+    margin: 2% 0;
+    width: 60% !important;
+    border-color: var(--primary-color) !important;
+    border: 1px solid;
+    z-index: 0;
+}
+
+
+    /*HEAD*/
+
+#head {
+    padding: 3% 10%;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.head-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.head-img-skills img {
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(50%);
+}
+
+.head-img-skills {
+    width: 60%;
+}
+
+.head-info {
+    width: 30%;
+}
+
+    /*SKILLS*/
+
+#prize {
+    padding: 3% 10%;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--dark-bg-color);
+    color: #fff;
+}
+
+#prize .section-head h2 {
+    font-size: 20;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+    
+#prize ul {
+    text-align: left;
+}
+
+#prize .writen  {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+    /*VIDEO*/
+
+#video {
+    padding: 3% 10%;
+    align-content: center;
+    justify-content: center;
+}
+
+#video .section-head h2 {
+    font-size: 20;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+    
+#video ul {
+    text-align: left;
+}
+
+#video .writen  {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+    /*END*/
+
+#end {
+    background-color: #eee;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+    
+.font-alt {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+    
+#end img {
+    width: 20%;
+}
+
