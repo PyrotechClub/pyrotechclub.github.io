@@ -5,7 +5,7 @@
     --font-color: #000;
     --bg-color: #fff;
     --heading-color: #000;
-    --nav-bg-color: rgb(35, 35, 35);
+    --nav-bg-color: rgba(35, 35, 35, 0.9);
     --overlay-color: rgba(255, 255, 255, 0.6);
     --skill-overlay-color: rgba(0, 0, 0, 0.4);
     --scroll-bg-color: #eee;
@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0;
     font-family : 'Raleway', sans-serif;
-    font-weight: 350 !important;
 }
 
 
@@ -71,7 +70,7 @@ hr {
     position: absolute;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #a5a5a5;
+    border-top-color: var(--primary-color);
     top: 5px;
     left: 5px;
     right: 5px;
@@ -120,11 +119,9 @@ hr {
 .navbar span {
     float: left;
     display: block;
-    color:  #eee;
     text-align: center;
     padding: 2vh;
     text-decoration: none;
-    transition: all 0.5s;
     margin: 10px 15px;
     position: relative;
     cursor: pointer;
@@ -397,7 +394,7 @@ hr {
     font-weight: 100;
 }
 
-#about h4,h5 {
+#about h4, #about h5 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -459,7 +456,7 @@ hr {
 .card-image .overlay {
     height: 100%;
     padding: 20%;
-    background-color: rgba(255, 255, 255, 0.88) !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
     opacity: 0;
     transition: 0.25s;
     border-top-left-radius: 10px;
@@ -485,6 +482,7 @@ hr {
 .card {
     margin: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .card-text {
@@ -495,6 +493,10 @@ hr {
     color: var(--font-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.card-text h5 {
+    text-transform: uppercase;
 }
 
 .web {
@@ -572,12 +574,15 @@ hr {
 .head-img img {
     width: 100%;
     border-radius: 50%;
+    filter: grayscale(50%);
+    transition: 0.25s;
 }
 
 .head-img-skills img {
     width: 100%;
     border-radius: 50%;
-    filter: grayscale(50%);
+    filter: grayscale(75%);
+    transition: 0.25s;
 }
 
 .head-img-skills {
@@ -586,6 +591,25 @@ hr {
 
 .head-info {
     width: 30%;
+    cursor: pointer;
+}
+
+.head-text {
+    color: #464646;
+    font-weight: 400 !important;
+    transition: 0.25s;
+}
+
+.head-info:hover .head-text {
+    color: #000;
+}
+
+.head-info:hover .head-img-skills img {
+    filter: grayscale(0%);
+}
+
+.head-info:hover .head-img img {
+    filter: grayscale(0%);
 }
 
     /*SKILLS*/
@@ -614,6 +638,11 @@ hr {
     font-weight: 300;
     padding-left: 8%;
     padding-right: 8%;
+}
+
+#prize small {
+    float: right;
+    color: var(--primary-color);
 }
 
     /*VIDEO*/
