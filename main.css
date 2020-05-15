@@ -10,7 +10,7 @@
     --skill-overlay-color: rgba(0, 0, 0, 0.4);
     --scroll-bg-color: #eee;
     --scroll-fg-color: #aaa;
-    --dark-bg-color: rgb(40, 40, 40);
+    --dark-bg-color: rgb(30, 30, 30);
 }
 
 /* PREREQUISITES */
@@ -42,7 +42,7 @@ body {
 
 hr {
     width: 85%;
-    border-color: var(--nav-bg-color);
+    border-color: var(--scroll-bg-color);
 }
 
     /* LOADER */
@@ -125,13 +125,15 @@ hr {
     margin: 10px 15px;
     position: relative;
     cursor: pointer;
-    font-size: 20
+    font-size: 20;
+    color: #000;
 }
 
 .navbar a span {
     float: right !important;
     padding: 0;
     margin: 4vh;
+    color: #fff;
 }
 
 .nav-number {
@@ -571,45 +573,26 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.head-img img {
-    width: 100%;
-    border-radius: 50%;
-    filter: grayscale(50%);
-    transition: 0.25s;
-}
-
-.head-img-skills img {
-    width: 100%;
-    border-radius: 50%;
-    filter: grayscale(75%);
-    transition: 0.25s;
-}
-
-.head-img-skills {
-    width: 60%;
-}
-
 .head-info {
-    width: 30%;
-    cursor: pointer;
+    width: 50%;
+}
+
+.pyro-heads {
+    min-width: 60%;
+    margin: 5vh 1vw;
 }
 
 .head-text {
-    color: #464646;
+    color: #000;
     font-weight: 400 !important;
     transition: 0.25s;
 }
 
-.head-info:hover .head-text {
-    color: #000;
-}
-
-.head-info:hover .head-img-skills img {
-    filter: grayscale(0%);
-}
-
-.head-info:hover .head-img img {
-    filter: grayscale(0%);
+.heads-hr {
+    width: 60%;
+    border-color: var(--scroll-fg-color);
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
     /*SKILLS*/
