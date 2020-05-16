@@ -574,12 +574,8 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.head-info {
-    width: 50%;
-}
-
 .pyro-heads {
-    min-width: 60%;
+    max-width: 80%;
     margin: 5vh 1vw;
 }
 
