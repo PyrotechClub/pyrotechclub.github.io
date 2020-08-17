@@ -266,7 +266,7 @@ a:hover {
 /* SECTIONS */
 
 .section .row .col-md-10 {
-    padding: 50px 0px;
+    padding: 50px 10px;
 }
 
 .section-hr {
@@ -470,6 +470,10 @@ a:hover {
 }
 
 /* END */
+
+#footer img {
+    max-width: 70%;
+}
 
 .font-alt {
     font-family: 'Dosis', sans-serif;
