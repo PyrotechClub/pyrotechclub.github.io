@@ -27,18 +27,18 @@ html {
 }
 
 ::-moz-selection {
-    color: #eee;
-    background-color: var(--secondary-color);
+    color: var(--text-color);
+    background-color: transparent;
 }
 
 ::-webkit-selection {
-    color: #eee;
-    background-color: var(--secondary-color);
+    color: var(--text-color);
+    background-color: transparent;
 }
 
 ::selection {
-    color: #eee;
-    background-color: var(--secondary-color);
+    color: var(--text-color);
+    background-color: transparent;
 }
 
 body {
