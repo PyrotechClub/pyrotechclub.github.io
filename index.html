@@ -1,541 +1,623 @@
+<!DOCTYPE html>
+
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-    
 <head>
-
-<title>Pyrotech Club</title>  
-
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
-<link href='main.css' rel='stylesheet' type='text/css'>
-<link href='animations.css' rel='stylesheet' type='text/css'>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="icon" href="images/favicon.png" sizes="26x26" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description"
+        content="I’m a 15 year old high-school student living in New Delhi, India and this is my portfolio website.">
+    <meta name="keywords"
+        content="Naman, Chandok, Naman Chandok, naman, chandok, naman chandok, namanchandok, NamanChandok">
+    <meta name="author" content="Naman Chandok">
+    <title>Pyrotech Club</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Poiret+One&family=Raleway&display=swap&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href='main.css' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
 </head>
+
 <body onload="myFunction()">
 
-    
-    <!---  LOADER   --->
-	
-<div class="load" id="load">
-    <center>
-        <div class="loader-wheel">
-        </div>
-    </center>
-</div>  
-
-<div class="mainBod" id="mainBod">
-        
-    <!---  NAVBAR   --->
-        
-<div class="navbar">
-    <span onclick="openNav()" class="bruh">
-        <i class="fas fa-bars"></i>
-    </span>
-    <a href="#home"><img src="images/logo.png" class="nav-logo"></a>
-</div>
-    
-<a class="sr-only sr-only-focusable" href="#mySidenav">Skip to navigation bar</a>
-<a class="sr-only sr-only-focusable" href="#home">Skip to main content</a>
-<a class="sr-only sr-only-focusable" href="#end">Skip to footer</a>    
-    
-<div id="mySidenav" class="sidenav">
-    <center>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#home">
-            <i class="nav-number">.01</i><br>
-            Home
-        </a>
-        <a href="#about">
-            <i class="nav-number">.02</i><br>
-            About Pyrotech
-        </a>
-        <a href="#skills">
-            <i class="nav-number">.03</i><br>
-            Skills
-        </a>
-        <a href="#head">
-            <i class="nav-number">.04</i><br>
-            Heads
-        </a>
-        <a href="#prize">
-            <i class="nav-number">.05</i><br>
-            Achievements
-        </a>
-        <a href="https://shaivipyrotech.typeform.com/to/VjQtIq" target="_blank" class="a-btn">Sign Up</a>
-    </center>
-</div>
-    
-    <!---  HEADER   --->
-        
-<div id="home" class="overlay">
-    <div class="heading animated fadeInDown">
+    <div class="load" id="load">
         <center>
-            <img src="images/logo.png"><br><br><br>
-            <a href="https://shaivipyrotech.typeform.com/to/VjQtIq" target="_blank" class="a-btn">Sign Up</a>
+            <div class="loader-wheel">
+            </div>
         </center>
     </div>
-    <div class="scroll-down">
-        <center>
-            <a href="#about"><i class="fa fa-long-arrow-alt-down"></i></a>
-        </center>
-    </div>
-</div>
 
-        <!---  ABOUT   --->
-        
-<center>        
-    <div id="about">
-        <div class="section-head">
-            <h1>About Pyrotech</h1>   
-            <hr>
-        </div>    
-        <div class="writen">
-            <p>Pyrotech members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in many events.</p> 
-            <p>The Pyrotech Club consists of Wiz kids who are talented in myriad areas such as web designing, software development, image editing, movie making, 3-D modelling, photography and others. They help other students gain competence on new software. They not only participate in various inter school computer competitions but also organise computer events within the school. The Annual  Inter-school Computer Fest ‘Ordin@trix’ is conceived, planned and organized entirely by the Pyrotech team.</p>
+    <div class="mainbod" id="mainbod">
+
+        <!-- FULLPAGE -->
+
+        <div id="fullpage">
+
+            <!-- HOME -->
+
+            <div class="section" id="home">
+                <div class="heading">
+                    <center>
+                        <img src="lib/logo-text.png"><br><br><br>
+                    </center>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+
+            <div class="section" id="about">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <div class="section-title">
+                            <h1>About Pyrotech</h1>
+                        </div>
+                        <br>
+                        <center>
+                            <div class="section-hr"></div>
+                        </center>
+                        <br>
+                        <div class="section-text">
+                            <p>Pyrotech members are an elite team of student computer enthusiasts. They have represented
+                                the school in various competitions and won laurels in many events.</p>
+                            <p>The Pyrotech Club consists of Wiz kids who are talented in myriad areas such as web
+                                designing, software development, image editing, movie making, 3-D modelling, photography
+                                and others. They help other students gain competence on new software. They not only
+                                participate in various inter school computer competitions but also organise computer
+                                events within the school. The Annual Inter-school Computer Fest ‘Ordin@trix’ is
+                                conceived, planned and organized entirely by the Pyrotech team.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+
+            <div class="section" id="skills">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <div class="section-title">
+                            <h1>Skills</h1>
+                        </div>
+                        <br>
+                        <center>
+                            <div class="section-hr"></div>
+                        </center>
+                        <br>
+                        <div class="section-text">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-image web">
+                                            <div class="overlay">
+                                                <a href="web.html" target="_blank">
+                                                    <span>Know More</span><br>
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <h5>Web-Development</h5>
+                                            <hr>
+                                            <p>Web design encompasses many different skills and disciplines in the
+                                                production and maintenance of websites<a href="web.html"
+                                                    target="_blank"> ...Read More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-image movie">
+                                            <div class="overlay">
+                                                <a href="movie.html" target="_blank">
+                                                    <span>Know More</span><br>
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <h5>Movie Making</h5>
+                                            <hr>
+                                            <p>Movie making involves a number of discrete stages including an initial
+                                                story, idea<a href="movie.html" target="_blank"> ...Read More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-image robotics">
+                                            <div class="overlay">
+                                                <a href="robotic.html" target="_blank">
+                                                    <span>Know More</span><br>
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <h5>robotics</h5>
+                                            <hr>
+                                            <p>Robotics is the study of robot technology, and it aids humans in their
+                                                daily tasks and grant them additional capabilities<a href="robotic.html"
+                                                    target="_blank"> ...Read More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-image photo">
+                                            <div class="overlay">
+                                                <a href="photo.html" target="_blank">
+                                                    <span>Know More</span><br>
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <h5>Digital Imaging</h5>
+                                            <hr>
+                                            <p>Digital imaging is the process of visual communication and
+                                                problem-solving through the use of typography<a href="photo.html"
+                                                    target="_blank"> ...Read More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-image music">
+                                            <div class="overlay">
+                                                <a href="music.html" target="_blank">
+                                                    <span>Know More</span><br>
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <h5>Music Production</h5>
+                                            <hr>
+                                            <p>Digital music technology encompasses digital instruments, computers,
+                                                electronic effects units, software<a href="music.html" target="_blank">
+                                                    ...Read More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-image game">
+                                            <div class="overlay">
+                                                <a href="game.html" target="_blank">
+                                                    <span>Know More</span><br>
+                                                    <i class="fas fa-angle-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <h5>Game Development</h5>
+                                            <hr>
+                                            <p>Game Development is the art of creating games and describes the design,
+                                                development and release of a game<a href="game.html" target="_blank">...
+                                                    Read More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <!-- HEADS -->
+
+            <div class="section" id="works">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <div class="section-title">
+                            <h1>Heads</h1>
+                        </div>
+                        <br>
+                        <center>
+                            <div class="section-hr"></div>
+                        </center>
+                        <br>
+                        <div class="section-text align-center">
+                            <center>
+                                <div class="row">
+                                    <!-- TECH-SHAIVI -->
+                                    <div class="col-md-6">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <img src="lib/prez.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Shaivi Shewaramani</h4>
+                                                <h5>President</h5>
+                                                <h6>Keeps the club on <i>Track</i></h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- NAMAN -->
+                                    <div class="col-md-6">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <img src="lib/namansir.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Naman Chandok</h4>
+                                                <h5>Vice-President</h5>
+                                                <h6>He does too much</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                </div>
+
+                                <div class="row">
+                                    <!-- AMOGH -->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/amukesh%20jamabani.png" class="head-img">-->
+                                                <img src="lib/amoghsir.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Amogh Jain</h4>
+                                                <h5>Head of Game Dev</h5>
+                                                <h6>Brings <i>Unity</i> to the Club</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> amogh.pyrotech@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--CHHAMYA STOP-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/namyaladeen.png" class="head-img">-->
+                                                <img src="lib/heckermen.jpg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Namya Chhabra</h4>
+                                                <h5>Head of Web Dev</h5>
+                                                <h6>Tries to think</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> namyachhabra@gmail<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--KABU-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/Adonald.png" class="head-img">-->
+                                                <img src="lib/kabusir.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Aditya Kabu</h4>
+                                                <h5>Head of Programming</h5>
+                                                <h6>Tough to <i>function</i> without him</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!--RONIT-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <img src="lib/ronit.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Ronit Das</h4>
+                                                <h5>Head of Gaming</h5>
+                                                <h6>The club's <i>Cyberpunk</i></h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--CHARAS-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/sharesus.png" class="head-img">-->
+                                                <img src="lib/charas.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Sharan Suri</h4>
+                                                <h5>Head of Robotics</h5>
+                                                <h6><i>Gears</i> the club up</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> sharansuri1980@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--BAJAJ-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/ansh%20kardashian.png" class="head-img">-->
+                                                <img src="lib/ansh.jpeg" class="head-img">
+                                            </div>
+
+                                            <div class="head-text">
+                                                <h4>Ansh Bajaj</h4>
+                                                <h5>Head of Quizzing</h5>
+                                                <h6 title="Derek o' Brian/Brain">The <i>Brian</i> of the club</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> anshbajaj07@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!--ANANDIYA-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/andandhi.png" class="head-img">-->
+                                                <img src="lib/anandiya.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Anandiya Sheel Diwan</h4>
+                                                <h5>Head of Digital Imaging</h5>
+                                                <h6>Gives some <i>perspective</i> to the club</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i>
+                                                    anandiya.sheel.diwan17@gmail.com<br><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--PASSIONATE MOVIE MAKER-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/saanya%20bandar.png" class="head-img">-->
+                                                <img src="lib/sanya.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Saanya Anand</h4>
+                                                <h5>Passionate Movie Maker</h5>
+                                                <h6>Keeps the club <i>rolling</i></h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> reachsaanya@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--MATTA-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <!--<img src="lib/trash/beast%20matta.png" class="head-img">-->
+                                                <img src="lib/matta.jpg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Ansh Matta</h4>
+                                                <h5>Head of Photography</h5>
+                                                <h6>The guy with the camera</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> anshmatta@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <!--KAMATH-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <img src="lib/kamath.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Manya Kamath</h4>
+                                                <h5>Head of Photography</h5>
+                                                <h6>The girl with the camera</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> manyakamath26@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--SUHANA-->
+                                    <div class="col-md-4">
+                                        <div class="head-info">
+                                            <div class="imgcontainer">
+                                                <img src="lib/suhana.jpeg" class="head-img">
+                                            </div>
+                                            <div class="head-text">
+                                                <h4>Suhana Mehta</h4>
+                                                <h5>Head of Photography</h5>
+                                                <h6>The girl with the tripod</h6>
+                                                <hr class="heads-hr">
+                                                <p><i class="fas fa-envelope"></i> suhana403@gmail.com<br><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <!-- ACHIEVEMENTS -->
+
+            <div class="section" id="achievements">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <div class="section-title">
+                            <h1>Achievements</h1>
+                        </div>
+                        <br>
+                        <center>
+                            <div class="section-hr"></div>
+                        </center>
+                        <br>
+                        <div class="section-text">
+                            <ul type="none">
+                                <li>
+                                    » Feuli Badoni and Vashnavi Pandey bagged the third prize in E-Brochure event and
+                                    Tech Talk event at ION 2020 Competition organised by Indraprastha International
+                                    School
+                                    <br><small>01 August 2020</small>
+                                </li>
+                                <br>
+                                <li>
+                                    » Tagoreans won laurels at Ordin@trix 20.0 - Interschool Technology Festival
+                                    <br>
+                                    Shivansh Badoni of class VII won the Third prize in Anim@trix event -Game
+                                    Development via Coding in SCRATCH software.
+                                    <br>
+                                    Siya Aneja, Pratyaksh and Simrat Oberoi of class IX won the Third prize in
+                                    Innovate@trix event-Pitching a Startup Idea.
+                                    <br><small>25 July 2020</small>
+                                </li>
+                                <br>
+                                <li>
+                                    » Manya Kamath won the First prize in the Photography Competition at Goonj -Inter
+                                    School Online Cultural Fest was organised by DPS Sector 45, Gurugram.
+                                    <br><small>05 June 2020</small>
+                                </li>
+                                <br>
+                                <li>
+                                    » Tagoreans won accolades at Alphanode organised by DPS, Gurugram
+                                    <br>
+                                    In the Sway Presentation event Sakina Nadeem and Rupsha of class IX won the First
+                                    prize.
+                                    <br>
+                                    In the Web Designing event Shaivi Shewaramani of class XI, Naman Chandok of class XI
+                                    and Namya Chhabra of class X won the Second prize.
+                                    <br><small>01 August 2020</small>
+                                </li>
+                                <br>
+                                <li>
+                                    » Tagoreans won laurels in Photography Competition organised by TIS, EOK
+                                    <br>
+                                    Aadya Kamath of class VIII won Judge's Choice First, Suhani Bansal of class XI won
+                                    Judge's Choice Second and Suhana Mehta of class XI won Viewer's Choice Award in
+                                    Polaroid Photography Competition organised by TIS, EOK.
+                                    <br><small>28 May 2020</small>
+                                </li>
+                                <br>
+                                <li>
+                                    » » Students shine at Filmit, movie making competition by INTACH.
+                                    <br>
+                                    1. Best Script- Utkarsh Mishra VIII A (Chatth Puja)<br>
+                                    2. Best Visuals- Md. Wafi Yousuf VIII A (Roganjosh)<br>
+                                    3. Best original animated film- Popularizing Gandhian principles to the Millennials
+                                    by Harshdeep Singh of XI C & Manya Kamath of X A<br>
+                                    4. Maximum number of Films<br>
+                                    <br><small>06 February 2020</small>
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <!-- VIDEO -->
+
+            <div class="section" id="video">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <center>
+                            <div class="section-hr"></div>
+                        </center>
+                        <br>
+                        <div class="section-text align-center">
+                            <video class="movie" width="100%" controls>
+                                <source src="lib/pyro.mp4" type="video/mp4">
+                                <source src="lib/pyro.ogg" type="video/ogg">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+
+            <div class="section fp-auto-height" id="footer">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-center">
+                        <div class="footer-text">
+                            <div class="footer-copy font-alt">
+                                <img src="lib/logo-text.png" alt="">
+                                <br><br><br>
+                                © Pyrotech Club 2020
+                            </div>
+                            <big>
+                                <p class="footer-made"> Made By: <a href="https://namanchandok.github.io"
+                                        target="_blank"> Naman Chandok</a> and Shaivi Shewaramani</p>
+                            </big>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+
         </div>
     </div>
-</center>
 
-        <!---  SKILLS   --->
-        
-<center>        
-    <div id="skills">
-        <div class="section-head">
-            <hr>
-            <h1>Skills</h1>    
-        </div>        
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-image web">
-                        <div class="overlay">
-                            <a href="web.html" target="_blank">
-                                <span>Know More</span><br>
-                                <i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <h5>Web-Development</h5>
-                        <hr>
-                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites<a href="web.html" target="_blank">... Read More</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-image movie">
-                        <div class="overlay">
-                            <a href="movie.html" target="_blank">
-                                <span>Know More</span><br>
-                                <i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <h5>Movie Making</h5>
-                        <hr>
-                        <p>Movie making involves a number of discrete stages including an initial story, idea<a href="movie.html" target="_blank">... Read More</a></p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>    
-        
-        <div class="row">            
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-image robotics">
-                        <div class="overlay">
-                            <a href="robotic.html" target="_blank">
-                                <span>Know More</span><br>
-                                <i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <h5>robotics</h5>
-                        <hr>
-                        <p>Robotics is the study of robot technology, and it aids humans in their daily tasks and grant them additional capabilities<a href="robotic.html" target="_blank">... Read More</a></p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-image photo">
-                        <div class="overlay">
-                            <a href="photo.html" target="_blank">
-                                <span>Know More</span><br>
-                                <i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <h5>Digital Imaging</h5>
-                        <hr>
-                        <p>Digital imaging is the process of visual communication and problem-solving through the use of typography<a href="photo.html" target="_blank">... Read More</a></p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>    
-        
-        <div class="row">            
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-image music">
-                        <div class="overlay">
-                            <a href="music.html" target="_blank">
-                                <span>Know More</span><br>
-                                <i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <h5>Music Production</h5>
-                        <hr>
-                        <p>Digital music technology encompasses digital instruments, computers, electronic effects units, software<a href="music.html" target="_blank">... Read More</a></p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-image game">
-                        <div class="overlay">
-                            <a href="game.html" target="_blank">
-                                <span>Know More</span><br>
-                                <i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-text">
-                        <h5>Game Development</h5>
-                        <hr>
-                        <p>Game Development is the art of creating games and describes the design, development and release of a game<a href="game.html" target="_blank">... Read More</a></p>
-                    </div>
-                </div>
-            </div>
-            
-        </div> 
-            
-    </div>
-</center>     
+    <script type="text/javascript" src="fontawesome.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript">
+        // FULLPAGE
 
-        <!---  HEADS   --->
-        
-<center>        
-    <div id="head">
-        <div class="section-head">
-            <h1>Heads</h1>   
-            <hr>
-        </div>    
-        <div class="writen">
-            
-            <img class="pyro-heads" src="images/heads.jpg">
-            
-            <div class="row"> 
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Shaivi Shewaramani</h4>
-                            <h5>President</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> shaivipyrotech@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">    
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Naman Chandok</h4>
-                            <h5>Vice President</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> namanpyrotech@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-            
-            <div class="row"> 
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Namya Chhabra</h4>
-                            <h5>Web Design</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> namyachhabra@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">  
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Ansh Bajaj</h4>
-                            <h5>Quizzing</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> anshbajaj07@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-            
-            <div class="row"> 
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Anandiya Sheel Diwan</h4>
-                            <h5>Digital Imaging</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> anandiya.sheel.diwan17@gmail.com<br><br></p>
-                        </div>
-                    </div> 
-                </div>
-                
-                <div class="col-md-6">    
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Sharan Suri</h4>
-                            <h5>Robotics</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> sharansuri1980@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>                
-            </div> 
-            
-            <div class="row">     
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Saanya Anand</h4>
-                            <h5>Movie Making</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> reachsaanya@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">    
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Harshdeep Singh</h4>
-                            <h5>Movie Making</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> harshsingh10122002@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>                
-            </div> 
-            
-            <div class="row"> 
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Sparsh Kumar Tanwar</h4>
-                            <h5>Programming</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> tnsparsh27@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">    
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Amogh Jain</h4>
-                            <h5>Game Development</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> amogh.pyrotech@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            
-            <div class="row"> 
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Ronit Das</h4>
-                            <h5>Game Development</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">    
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Aditya Kabu</h4>
-                            <h5>Game Development</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>                
-            </div> 
-
-            <div class="row"> 
-                <div class="col-md-6">
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Ansh Matta</h4>
-                            <h5>Photography</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> anshmatta21@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">    
-                    <div class="head-info">
-                        <div class="head-text">
-                            <h4>Manya Kamath</h4>
-                            <h5>Photography</h5>
-                            <hr class="heads-hr">
-                            <p><i class="fas fa-envelope"></i> manyakamath26@gmail.com<br><br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>               
-            
-        </div> 
-    </div>
-</center>
-
-        <!---  ACHIEVEMENTS   --->
-        
-<center>        
-    <div id="prize">
-        <div class="section-head">
-            <hr>
-            <h1>Achievements</h1>   
-        </div>    
-        <div class="writen">
-            <ul type="none">
-                <br>
-                <li>» The school team won the first position in the event Infinity Modders. Aditya Kabu XI C, Sparsh Kumar XI C, Anandiya Sheel XI C, Amogh Jain and Ronit Das XI C stood first defeating all the other teams in the overall presentation and the features of the game.<br><small>18 July 2019</small></li><br><br>
-                <li>» In Anim@trix event, Shivansh Badoni and Aneira Shewaramani of V A won the first position for creating an animated story in Scratch.<br><small>06 August 2019</small></li><br><br>
-                <li>» In  Movie@trix,Harshdeep Singh of  XI C and Sahil Chowdhary of XI A, were awarded the prize for best sound effects by CHINH India.<br><small>06 August 2019</small></li><br><br>
-                <li>» In  Quiz@trix,Ansh Bajaj of XI C and Namya Chabbra of  IX A bagged the third position.<br><small>06 August 2019</small></li><br><br>
-                <li>» Amogh Jain & Aditya Kabu won the second prize in Game Development at Access 2019.<br><small>13 August 2019</small></li><br><br>     
-                <li>» Rimuksh Kansal and Girik Jindal secured the third position in Code Bytes.<br><small>23 August 2019</small></li><br><br>           
-                <li>» School won second position in interschool movie making Competition-Screen Time in Think Summit 2019,  organised by DPS R K Puram.<br><small>28 September 2019</small></li><br><br>         
-                <li>» Aneira Shewaramani of class V bagged the first position in drawing competition using MS-Paint software at Force Fest organized by Apeejay, Sheikh Sarai.<br><small>18 October 2019</small></li><br><br>                
-                <li>» Ronit Das of XI C stood first in the gaming event giving a tough fight to all the contestants in grilling rounds at Force Fest organized by Apeejay, Sheikh Sarai.<br><small>18 October 2019</small></li><br><br>      
-                <li>» Arihant Jain and Tanish Chowdhary bagged the first position in Powerpoint presentation event in Learners’ Conclave organized by Lotus Valley School, Gurugram.<br><small>18 October 2019</small></li><br><br>   
-                <li>» Somavenath Sawhney was declared runners up in Delhi-NCR Junior Gaming Championship v3.0 conducted at DPS, RK Puram.<br><small>20 October 2019</small></li><br><br>
-                <li>» DPS International School Saket organized their annual IT fest “Syntax”. Maalav Chakraborty of IX A secured the third position in syntax design event.<br><small>9 November 2019</small></li><br><br>
-                <li>» Students shine at Junior Flash event by RSJ Modern School 2019.<br><small>13 December 2019</small></li><br><br>
-                <li>» Manya Kamath and Harshdeep Singh bagged the 3rd position in the movie making competition at INDIA FEST'19, was organized by DPS R K Puram.<br><small>14 December 2019</small></li><br><br>
-                <li>» Students shine at Filmit, movie making competition by INTACH.<br><small>06 February 2020</small></li><br><br>
-                
-            </ul>
-        </div>
-    </div>
-</center>
-    
-        <!---  VIDEO   --->
-        
-<div id="video">
-    <center>
-         <div class="section-head"> 
-            <hr>
-        </div>    
-        <div class="writen">
-            <video class="movie" width="100%" controls>
-                <source src="images/pyro.mp4" type="video/mp4">
-                <source src="images/pyro.ogg" type="video/ogg">
-            </video>
-        </div>
-    </center>
-</div>
-    
-        <!---  FOOTER   --->
-        
-<div id="end">
-    <center>
-        <div class="footer-text">
-            <div class="footer-copy font-alt">
-                <a href="#home"><img src="images/logo.png" alt=""></a><br><br><br>
-                © Pyrotech Club 2020
-            </div>
-            <br>
-            <big><p class="footer-made"> Made By: <a href="https://namanchandok.github.io" target="_blank"> Naman Chandok</a> and Shaivi Shewaramani</p> </big>  
-        </div>
-    </center>
-</div>
-    
-
-</div>
-<script>
-    
-    // LOADER
-    
-    var myVar;
-    function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-        document.getElementById("load").style.display = "none";
-        document.getElementById("mainBod").style.display = "block";
-    } 
-    
-    // TRANSPARENT NAVBAR
-    
-    jQuery(document).on("scroll", function () {
-        if ($(document).scrollTop() > 120) {
-            $(".navbar").css("background-color","var(--nav-bg-color)");
-            $(".overlay").css("background-color","rgba(255, 255, 255, 0.7)");
-            $(".nav-logo").css("opacity","1");
-            $(".bruh").css("color","#eee");            
-        } else {
-            $(".navbar").css("background","none");
-            $(".overlay").css("background-color","var(--overlay-color)");   
-            $(".nav-logo").css("opacity","0");
-            $(".bruh").css("color","#000");
-        }
-    });  
-    
-    // SMOOTH SCROLL
-    
-    $(document).ready(function(){
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            } 
+        var myFullpage = new fullpage('#fullpage', {
+            navigation: true,
+            scrollOverflow: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Home', 'About Pyrotech', 'Skills', 'Heads', 'Achievements',
+                'Introductory Movie'
+            ]
         });
-    });    
-    
-    // SIDE-NAV
-    
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-    
-</script>
+        // LOADER
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("load").style.transform = "translateY(-100vh)";
+        }
+    </script>
 </body>
+
 </html>
