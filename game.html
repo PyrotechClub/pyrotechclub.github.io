@@ -1,118 +1,133 @@
+<!DOCTYPE html>
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-    
 <head>
-
-<title>Game Development | Pyrotech Club</title>  
-
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
-<link href='main.css' rel='stylesheet' type='text/css'>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="icon" href="images/favicon.png" sizes="26x26" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description"
+        content="Pyrotech members are an elite team of student computer enthusiasts at Tagore International School, Vasant Vihar.">
+    <meta name="keywords" content="pyrotech club, Pyrotech Club, PyrotechClub, pyrotechclub, pyrotech, Pyrotech">
+    <meta name="author" content="Pyrotech Club">
+    <title>Game Development | Pyrotech Club</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Poiret+One&family=Raleway&display=swap&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href='main.css' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
 </head>
 
 <body>
-    
-    <!---  NAVBAR   --->
-        
-<div class="navbar skill-nav">
-    <a href="index.html"><img src="images/logo.png" class="nav-logo skill-page-nav-logo"></a>
-    <a href="index.html"><span>Home</span></a>
-</div>    
-    
-    <!---  HEADER   --->
-        
-<div id="home" class="overlay skill-page-home game-home">
-    <div class="heading animated fadeInDown">
-        <center>
-            <h1>Game Development</h1>
-        </center>
-    </div>
-</div>
-    
-    <!---  ABOUT   --->
-        
-<center>        
-    <div id="about">
-        <div class="writen">
-            <p>
-                In these classes one of the most popular and undoubtedly most widely used game development platform will be taught to the students, i.e. Unreal Engine. This platform has been used to create of some of the highest rated games like Fortnite, Borderland, Tom Clancys’, Gear of Wars and Injustice Gods among us to name a few.<br>
-                Apart from developing games, students will also be taught to develop and import their own modules using blender and animate characters too.<br>
-                The gaming industry is currently worth $200 billion and it is only to grow with the wider player userbase creating tremendous opportunities for game developers to exercise their skills and expertise. All this combined with python language (in the course) is a complete deal breaker.
-            </p>    
-        </div> 
-    </div>
-    <hr>
-</center>
-    
-    <!---  HEADS   --->
-        
-<center>        
-    <div id="head">
-        <div class="writen">
-                
-            <div class="head-info">
-                <div class="head-text">
-                    <h4>Aditya Kabu</h4>
-                    <hr class="heads-hr">
-                    <p><i class="fas fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
-                </div>
-            </div>
-            <div class="head-info">
-                <div class="head-text">
-                    <h4>Ronit Das</h4>
-                    <hr class="heads-hr">
-                    <p><i class="fas fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
-                </div>
-            </div>
-            <div class="head-info">
-                <div class="head-text">
-                    <h4>Amogh Jain</h4>
-                    <hr class="heads-hr">
-                    <p><i class="fas fa-envelope"></i> amoghjain65@gmail.com<br><br></p>
-                </div>
-            </div>
-                
-        </div> 
-    </div>
-</center>
 
-    <!---  FOOTER   --->    
-    
-<div id="end">
-    <center>
-        <div class="footer-text">
-            <div class="footer-copy font-alt">
-                <a href="index.html"><img src="images/logo.png" alt=""></a><br><br><br>
-                © Pyrotech Club 2020
+    <div id="fullpage">
+
+        <div class="section game-home" id="home">
+            <div class="heading">
+                <center>
+                    <h1>Game Development</h1>
+                    <h6><a href="index.html">Back to Home</a></h6>
+                </center>
             </div>
-            <br>
-            <big><p class="footer-made"> Made By: <a href="https://namanchandok.github.io" target="_blank"> Naman Chandok</a> and Shaivi Shewaramani</p> </big>  
         </div>
-    </center>
-</div>
 
-<script>
-    
-    // TRANSPARENT NAVBAR
-    
-    jQuery(document).on("scroll", function () {
-        if ($(document).scrollTop() > 120) {
-            $(".navbar").css("background-color","var(--nav-bg-color)");
-            $(".overlay").css("background-color","rgba(255, 255, 255, 0.64)");
-        } else {
-            $(".navbar").css("background","none");
-            $(".overlay").css("background-color","var(--overlay-color)");
-        }
-    });  
-    
-</script>
-</body>    
+        <!-- ABOUT -->
+
+        <div class="section" id="about">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 align-center">
+                    <div class="section-text">
+                        <p>
+                            In these classes one of the most popular and undoubtedly most widely used game development
+                            platform will be taught to the students, i.e. Unreal Engine. This platform has been used to
+                            create of some of the highest rated games like Fortnite, Borderland, Tom Clancys’, Gear of
+                            Wars and Injustice Gods among us to name a few.<br>
+                            Apart from developing games, students will also be taught to develop and import their own
+                            modules using blender and animate characters too.<br>
+                            The gaming industry is currently worth $200 billion and it is only to grow with the wider
+                            player userbase creating tremendous opportunities for game developers to exercise their
+                            skills and expertise. All this combined with python language (in the course) is a complete
+                            deal breaker.
+                        </p>
+                    </div>
+                    <br>
+                    <center>
+                        <div class="section-hr"></div>
+                    </center>
+                    <br>
+                    <div class="section-text align-center">
+                        <center>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="head-info">
+                                        <div class="head-text">
+                                            <h4>Amogh Jain</h4>
+                                            <hr class="heads-hr">
+                                            <p><i class="fal fa-envelope"></i> amoghjain65@gmail.com<br><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="head-info">
+                                        <div class="head-text">
+                                            <h4>Aditya Kabu</h4>
+                                            <hr class="heads-hr">
+                                            <p><i class="fal fa-envelope"></i> kabuaditya1@gmail.com<br><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="head-info">
+                                        <div class="head-text">
+                                            <h4>Ronit Das</h4>
+                                            <hr class="heads-hr">
+                                            <p><i class="fal fa-envelope"></i> ronitpyrotech@gmail.com<br><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fp-auto-height" id="footer">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 align-center">
+                    <div class="footer-text">
+                        <div class="footer-copy font-alt">
+                            <img src="lib/logo-text.png" alt="">
+                            <br><br><br>
+                            © Pyrotech Club 2020
+                        </div>
+                        <big>
+                            <p class="footer-made"> Made By: <a href="https://namanchandok.github.io"
+                                    target="_blank"> Naman Chandok</a> and Shaivi Shewaramani</p>
+                        </big>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="fontawesome.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript">
+        // FULLPAGE
+
+        var myFullpage = new fullpage('#fullpage', {
+            scrollOverflow: true,            
+            sectionsColor: ['rgba(0,0,0,0.7)', '#fff', '#eee']
+        });
+
+    </script>
+</body>
 
 </html>
