@@ -95,7 +95,7 @@ a:hover {
     padding-top: 17%;
     z-index: 999999;
     position: fixed;
-    transition: 1s cubic-bezier(0, 0, 0, 1.03);
+    transition: 5s cubic-bezier(0, 0, 0, 1.03);
     text-align: center;
 }
 
