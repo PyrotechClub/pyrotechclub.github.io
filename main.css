@@ -152,7 +152,7 @@ a:hover {
     color: var(--font-color) !important;
 }
 
-#fp-nav ul li:nth-child(6) {
+#fp-nav ul li:nth-child(7) {
     display: none;
 }
 
@@ -180,7 +180,7 @@ a:hover {
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .web-home::before {
@@ -196,6 +196,11 @@ a:hover {
 .game-home::before {
     opacity: 1 !important;
     background-image: url(lib/game.png) !important;
+}
+
+.three-home::before {
+    opacity: 1 !important;
+    background-image: url(lib/3d.jpg) !important;
 }
 
 .quiz-home::before {
@@ -229,7 +234,7 @@ a:hover {
 }
 
 #oops .heading h1 {
-    background-image: url(https://teampyro.tech/lib/homebg.png);
+    background-image: url(https://pyrotechclub.github.io/lib/homebg.png);
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
@@ -252,6 +257,23 @@ a:hover {
 
 .heading h6 {
     font-size: 20px;
+}
+
+a.button {
+    color: #000;
+    border: var(--font-color) solid 2px;
+    background: none;
+    border-radius: 30px;
+    padding: 7px 30px;
+    transition: 0.25s;
+    text-align: center;
+    cursor: pointer;
+}
+
+a.button:hover {
+    background: var(--font-color);
+    color: #fff;
+    text-decoration: none;
 }
 
 #oops {
@@ -365,6 +387,12 @@ a:hover {
     background-position: center;
 }
 
+.threed {
+    background-image: url(lib/3d.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .quiz {
     background-image: url(lib/quiz.png);
     background-size: cover;
@@ -390,7 +418,7 @@ a:hover {
 }
 
 .program {
-    background-image: url(lib/programming.png);
+    background-image: url(lib/code.png);
     background-size: cover;
     background-position: center;
 }
