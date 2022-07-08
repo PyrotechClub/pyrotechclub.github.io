@@ -152,7 +152,7 @@ a:hover {
     color: var(--font-color) !important;
 }
 
-#fp-nav ul li:nth-child(7) {
+#fp-nav ul li:nth-child(6) {
     display: none;
 }
 
